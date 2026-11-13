@@ -24,8 +24,9 @@ spctl -a -vv -t open --context context:primary-signature Umbra-Sigil_<version>_a
 spctl -a -vv -t exec "/Applications/Umbra Sigil.app"
 ```
 
-Both should report `source=Notarized Developer ID` and
-`origin=Developer ID Application: KIAN PHILIP WATKINS (N7447R8KW2)`.
+Both should report `source=Notarized Developer ID` and an `origin=Developer ID
+Application: …` line that ends in the team ID `(N7447R8KW2)`. Trust the team ID,
+not the name before it.
 
 ## Update metadata
 
